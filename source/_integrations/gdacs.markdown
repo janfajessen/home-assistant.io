@@ -17,7 +17,7 @@ ha_platforms:
 ha_integration_type: service
 ---
 
-The `gdacs` integration lets you use a GeoRSS feed provided by [GDACS](https://www.gdacs.org/) with information about major droughts, earthquakes, floods, tropical cyclones, tsunamis and volcanic activities worldwide.
+The `gdacs` integration lets you use a GeoRSS feed provided by [GDACS](https://www.gdacs.org/) with information about major droughts, earthquakes, floods, tropical cyclones, tsunamis, volcanic and wild fires activities worldwide.
 It retrieves alerts from a feed and shows information of those alerts filtered by distance to Home Assistant's location.
 The filter is set in the configuration as categories, radius (kilometers or miles based on unit system set in Home Assistant), latitude and longitude.
 
@@ -51,7 +51,7 @@ The following state attributes are available for each entity in addition to the 
 | external_id      | The external ID used in the feed to identify the alert. |
 | title            | Title of this entry. |
 | description      | Description of this entry. |
-| event type       | Type of event this alert is for (Drought, Earthquake, Flood, Tropical Cyclone, Tsunami, Volcano). |
+| event type       | Type of event this alert is for (Drought, Earthquake, Flood, Tropical Cyclone, Tsunami, Volcano, Wild Fire). |
 | alert level      | Alert level (Red, Orange, Green). |
 | country          | Country that the alert is applicable to. |
 | duration in week | Duration of the alert in full weeks (only shown if more than one week). |
